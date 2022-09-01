@@ -12,29 +12,22 @@
   margin-left: auto;
 }
 .hero-title {
+  @include font(900, 44px, 1.36, 0.06em);
   color: var(--white-color);
 
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .button.primary {
+  @include font(700, 16px, 1.9, 0.06em);
   color: var(--white-color);
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
   cursor: pointer;
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
   display: inline-block;
   padding: 10px 25px;
   border-radius: 4px;

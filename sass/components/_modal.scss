@@ -25,11 +25,8 @@
   }
 }
 .modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  @include font(700, 20px, 1.15, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
 .btn-close {
@@ -61,11 +58,10 @@
   margin-bottom: 10px;
 }
 .modal-label {
+  @include font(null, 12px, null, 0.01em);
   position: relative;
   display: flex;
   flex-direction: column;
-  font-size: 12px;
-  letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 20px;
 }
@@ -108,8 +104,7 @@
   }
 }
 .checkbox-text {
-  font-size: 14px;
-  letter-spacing: 0.03em;
+  @include font(null, 14px, null, 0.03em);
   color: #757575;
 }
 .checkbox-field {

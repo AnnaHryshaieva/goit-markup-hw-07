@@ -17,18 +17,14 @@
   }
 }
 .logo-w {
+  @include font(700, 26px, 1.19, null);
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 .logo-s {
+  @include font(700, 26px, 1.19, null);
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 .site-nav {
   display: flex;
@@ -38,12 +34,9 @@
     color: var(--accent-color);
   }
   & .link {
+    @include font(500, 14px, 1.14, 0.02em);
     position: relative;
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -60,11 +53,8 @@
   display: flex;
   margin-left: auto;
   & .link {
+    @include font(500, 14px, 1.14, 0.02em);
     color: var(--secondary-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;

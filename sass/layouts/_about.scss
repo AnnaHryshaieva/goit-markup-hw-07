@@ -5,6 +5,7 @@
   position: relative;
 }
 .work-descr {
+  @include font(700, 14px, 1.14, 0.03em);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -13,11 +14,7 @@
   justify-content: center;
   align-items: center;
   padding: 27px 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: #ffffff;

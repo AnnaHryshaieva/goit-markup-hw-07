@@ -5,14 +5,12 @@
   margin-bottom: 50px;
 }
 .button.secondary {
+  @include font(500, 16px, 1.63, null);
   color: var(--title-text-color);
   background-color: var(--secondary-color-btn);
   border: 0px;
   cursor: pointer;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
   text-align: center;
   padding: 6px 22px;
   border-radius: 4px;
@@ -37,16 +35,11 @@
   flex-wrap: wrap;
   gap: 30px;
   & .text {
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(null, 16px, 1.88, null);
   }
   & .title {
+    @include font(700, 18px, 2, 0.06em);
     color: var(--title-text-color);
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
   }
   & .link {
     display: inline-block;
@@ -65,14 +58,11 @@
   }
 }
 .project-descr {
+  @include font(400, 18px, 1.56, 0.03em);
   position: absolute;
   top: 0;
   left: 0;
   padding: 63px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
