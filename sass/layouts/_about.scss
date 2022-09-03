@@ -1,10 +1,17 @@
-.section-about {
+.about {
   padding-top: 0;
 }
-.work-list-descr {
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+.work-list__item {
+  width: calc((100% - 60px) / 3);
+}
+.work-list__descr {
   position: relative;
 }
-.work-descr {
+.work-list__text {
   @include font(700, 14px, 1.14, 0.03em);
   position: absolute;
   bottom: 0;
@@ -16,14 +23,6 @@
   padding: 27px 10px;
   text-align: center;
   text-transform: uppercase;
-
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
-}
-.work-list {
-  display: flex;
-  gap: 30px;
-}
-.work-list-item {
-  width: calc((100% - 60px) / 3);
 }

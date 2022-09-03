@@ -1,21 +1,17 @@
-.feature-icon {
-  width: 70px;
-  height: 70px;
-}
 .feature-list {
   display: flex;
   gap: 30px;
-  & .title {
-    @include font(700, 14px, 1.14, 0.03em);
-    color: var(--title-text-color);
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
 }
-.feature-list-item {
+.feature-list__item {
   width: calc((100% - 90px) / 4);
 }
-.list-icon {
+.feature-list__title {
+  @include font(700, 14px, 1.14, 0.03em);
+  color: var(--title-text-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.feature-list__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,4 +19,8 @@
   height: 120px;
   margin-bottom: 30px;
   background-image: url(../images/bg-feature.jpg);
+}
+.feature-icon {
+  width: 70px;
+  height: 70px;
 }
